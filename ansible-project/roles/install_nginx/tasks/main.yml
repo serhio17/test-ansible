@@ -1,2 +1,7 @@
-- name: site | hello world
-  shell: echo "Hi! Ansible is working"
+- name: Install nginx
+  apt: name=nginx state=latest
+
+- name: Start nginx
+  service: 
+    name: nginx
+    state: started

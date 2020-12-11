@@ -1,6 +1,11 @@
 - name: Install nginx
   apt: name=nginx state=latest
 
+- name: Insert Index Page
+  template:
+    src: index.html
+    dest: /usr/share/nginx/html/index.html
+
 - name: Start nginx
   service: 
     name: nginx

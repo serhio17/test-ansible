@@ -1,4 +1,4 @@
-# Preparing a docker container
+# Preparing a Docker container
 docker run -itd --name ansible -p 8080:80 --privileged ubuntu:18.04 bash
 docker exec -it ansible bash
 apt-get update

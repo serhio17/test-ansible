@@ -2,8 +2,7 @@
 docker run -itd --name ansible -p 8080:80 --privileged ubuntu:18.04 bash
 docker exec -it ansible bash
 apt-get update
-apt-get install openssh-server net-tools ansible git vim -y
-service ssh start
+apt-get install net-tools ansible git vim -y
 
 # Clone remote repository
 git clone https://github.com/serhio17/test-ansible.git

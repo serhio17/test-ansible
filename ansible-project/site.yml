@@ -1,0 +1,6 @@
+---
+- hosts: all
+  
+  roles:
+    - { role: install_nginx, tags: install_nginx }
+    # - { role: install_postgresql, tags: install_postgresql }
